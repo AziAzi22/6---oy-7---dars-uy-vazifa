@@ -110,7 +110,24 @@
 
 // 2 \\
 
-// ikkinchi masala sharti tshunarsiz ekan man tshunmadim ustoz
+
+function indentificatro(password:(string | number)): ({message: string}) {
+    if (typeof password === "string") {
+        return {
+            message: "password is string"
+        }
+    } else {
+        return {
+            message: "password is number"
+        }
+        
+    }
+}
+
+console.log(indentificatro("ali11"));
+console.log(indentificatro(12222));
+
+
 
 //////////////////////////  4 primitive types
 
